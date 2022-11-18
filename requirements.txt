@@ -1,0 +1,7 @@
+selenium
+beatifulsoup4
+fastapi
+uvicorn
+requests
+Jinja2
+python-multipart
