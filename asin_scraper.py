@@ -18,6 +18,7 @@ def get_asin(asin):
     html_sauce = driver.page_source
     driver.close()
     soup = BeautifulSoup(html_sauce, 'html.parser')
+    print(soup.prettify())
     product_title = soup.find("span", {"id": "productTitle"}).contents[0].strip()
     total_stars = soup.find("span", {"class": "a-icon-alt"}).contents[0].strip()
     total_reviews = soup.find("span", {"id": "acrCustomerReviewText"}).contents[0].strip()
