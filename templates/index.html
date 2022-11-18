@@ -54,7 +54,7 @@
 <button type="Submit" class="btn btn-success">Search</button>
           </form>
 <div id="passwordHelpBlock" class="form-text">
-  Make sure the song you enter is available on spotify since this web app uses the spotify API.
+  Make sure to enter a valid ASIN, anything else will make the app shit itself unfortunately.
 </div>
 
 
@@ -65,11 +65,11 @@
         <div>
           <br>
           <br>
-          <h1 style="color:white">Product title : {{ title }}</h1></div>
-          <h1 style="color:white">Total Stars : {{ totalstars }}</h1></div>
-          <h1 style="color:white">Total Reviews : {{ total_reviews }}</h1></div>
-          <h1 style="color:white">Price : {{ price }}</h1></div>
-          <h1 style="color:white">Total Stars : {{ totalstars }}</h1></div>
+          <h1 style="color:white">Product title : {{ title }}</h1>
+          <h1 style="color:white">Total Stars : {{ totalstars }}</h1>
+          <h1 style="color:white">Total Reviews : {{ total_reviews }}</h1>
+          <h1 style="color:white">Price : {{ price }}</h1>
+          <img src= {{ prodimage }} width="500" height="600">
       </div>
     </div>
   </section><!-- End Hero -->  <!-- End #main -->
