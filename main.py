@@ -20,3 +20,7 @@ async def root(request : Request):
 async def get_form_data(request : Request,inputasin: str = Form(...)):
     product_details_list = get_asin(inputasin)
     return templates.TemplateResponse('index.html',{"request": request,"title": product_details_list[0],"totalstars": product_details_list[1],"total_reviews": product_details_list[2],"price": product_details_list[3],"prodimage": product_details_list[4]})
+
+@app.get('/product_info')
+async def get_product_info(asinz:str):
+    return get_asin(asinz)
